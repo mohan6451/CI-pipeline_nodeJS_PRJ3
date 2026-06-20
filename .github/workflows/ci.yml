@@ -11,7 +11,7 @@ on:
         description: 'deplot to'
         required: true
         default: 'STG'
-        options: [ 'prd', 'stg', 'uat', 'plt' ]
+        options: [ 'PRD', 'STG', 'uat', 'plt' ]
         
 
 env:
@@ -19,8 +19,10 @@ env:
 
 jobs:
   #job - 0 workflow trigger
-  setup:
+  deploy:
+    name: trigger
     run-on: ubuntu-latest
+    
     steps:
       - name: trigger info
         run: |
