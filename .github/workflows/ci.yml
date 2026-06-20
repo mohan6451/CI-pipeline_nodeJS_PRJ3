@@ -125,7 +125,7 @@ jobs:
           git config --global user.name "CI Bot"
 
           # Clone the manifest repo
-          git clone https://x-access-token:${{ secrets.MANIFEST_REPO_TOKEN }}@github.com/${{ github.repository_owner }}/nodejs-manifests.git
+          git clone https://x-access-token:${{ secrets.MANIFEST_REPO_TOKEN }}@github.com/${{ github.repository_owner }}/CD-pipeline_for_nodeJS_PRJ3.git
 
           cd nodejs-manifests
 
