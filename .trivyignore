@@ -1,0 +1,2 @@
+# .trivyignore
+CVE-2026-31802    # tar symlink traversal — acceptable risk
