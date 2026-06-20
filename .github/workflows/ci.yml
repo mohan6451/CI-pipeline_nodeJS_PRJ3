@@ -5,11 +5,12 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-  workflow dispatch:
+  workflow_ dispatch:
     inputs:
       environment:
         description: 'deplot to'
         required: true
+        default: 'STG'
         
 
 env:
