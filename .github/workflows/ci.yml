@@ -11,6 +11,7 @@ on:
         description: 'deplot to'
         required: true
         default: 'STG'
+        options: [ 'prd', 'stg', 'uat', 'plt' ]
         
 
 env:
