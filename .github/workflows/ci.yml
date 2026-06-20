@@ -127,7 +127,8 @@ jobs:
           # Clone the manifest repo
           git clone https://x-access-token:${{ secrets.MANIFEST_REPO_TOKEN }}@github.com/${{ github.repository_owner }}/CD-pipeline_for_nodeJS_PRJ3.git
 
-          cd nodejs-manifests
+          cd CD-pipeline_for_nodeJS_PRJ3
+
 
           # Replace image tag in deployment.yaml
           sed -i "s|image: .*/nodejs-app:.*|image: ${{ env.IMAGE_NAME }}:${{ github.sha }}|g" deployment.yaml
