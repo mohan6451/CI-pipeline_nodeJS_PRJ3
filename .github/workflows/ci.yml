@@ -5,6 +5,12 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
+  workflow dispactch:
+    inputs:
+      environment:
+        description: 'deplot to'
+        required: true
+        
 
 env:
   IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/nodejs-app
