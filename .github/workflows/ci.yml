@@ -17,7 +17,13 @@ env:
   IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/nodejs-app
 
 jobs:
-
+  #job - 0 workflow trigger
+  setup:
+    run-on: ubuntu-latest
+    steps:
+      - name: trigger info
+        run: |
+          echo "Is manual: ${{ github.event_name == 'workflow_dispatch' }}"
   # ───────────────────────────────────────────────────────────────
   # JOB 1 — Unit Tests
   # ───────────────────────────────────────────────────────────────
