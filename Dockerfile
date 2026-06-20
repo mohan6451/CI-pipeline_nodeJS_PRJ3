@@ -8,8 +8,8 @@ WORKDIR /app
 # Copy only package files first for layer caching
 COPY app/package*.json ./
 
-# Install only production dependencies
-RUN npm ci --only=production
+# Install 
+RUN npm install --omit=dev
 
 # ─────────────────────────────────────────────
 # Stage 2: Production image
