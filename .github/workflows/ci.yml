@@ -5,7 +5,7 @@ on:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-  workflow dispactch:
+  workflow dispatch:
     inputs:
       environment:
         description: 'deplot to'
