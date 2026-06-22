@@ -257,6 +257,9 @@ This repo hands off a verified Docker image and an updated `deployment.yaml`. Th
 
 ---
 
+Note: Adding the reference doc. to the repo that will be helpful while working with GitHub actions. 
+
+---
 ## Author
 
 **Mohan** — Cloud Operations & SRE Engineer  
