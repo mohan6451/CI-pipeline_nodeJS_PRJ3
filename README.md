@@ -263,6 +263,6 @@ Note: Adding the reference doc. to the repo that will be helpful while working w
 ## Author
 
 **Mohan** — Cloud Operations & SRE Engineer  
-[GitHub](https://github.com/mohan6451) · [LinkedIn](https://linkedin.com/in/your-profile)
+[GitHub](https://github.com/mohan6451) · [LinkedIn](https://linkedin.com/in/mohanrajuk)
 
 > Part 1 of a two-part CI/CD portfolio project. The CI pipeline (this repo) is fully implemented and tested. The CD pipeline (ArgoCD + Kubernetes) is linked above.

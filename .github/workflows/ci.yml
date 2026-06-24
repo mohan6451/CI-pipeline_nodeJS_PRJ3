@@ -11,9 +11,9 @@ on:
         description: 'deploy to'
         required: true
         default: 'STG'
-        options: [ 'PRD', 'STG', 'uat', 'plt' ]
+      #options: [ 'PRD', 'STG', 'uat', 'plt' ]
+       
         
-
 env:
   IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/nodejs-app
 
