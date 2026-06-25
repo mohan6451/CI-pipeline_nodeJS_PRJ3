@@ -13,11 +13,11 @@ variable "ami_id" {
 variable "public_key_path" {
   description = "Path to your SSH public key"
   type        = string
-  default     = "~/.ssh/id_rsa.pub"
+  default     = "~/onedrive/desktop/ssh_keys/k8s.pub"
 }
 
 variable "my_ip_cidr" {
   description = "Your IP in CIDR format for SSH access e.g. 203.0.113.0/32"
   type        = string
-  default     = "0.0.0.0/0"  # Replace with your actual IP in production
+  default     = "49.37.144.203/32"  # Replace with your actual IP in production
 }

@@ -151,7 +151,7 @@ resource "aws_key_pair" "k8s_key" {
 # ─────────────────────────────────────────────
 resource "aws_instance" "master" {
   ami                    = var.ami_id
-  instance_type          = "t2.medium"  # Minimum recommended for master
+  instance_type          = "m7i-flex.large"  # Minimum recommended for master
   subnet_id              = aws_subnet.public.id
   vpc_security_group_ids = [aws_security_group.k8s_sg.id]
   key_name               = aws_key_pair.k8s_key.key_name
@@ -175,7 +175,7 @@ resource "aws_instance" "master" {
 # ─────────────────────────────────────────────
 resource "aws_instance" "worker" {
   ami                    = var.ami_id
-  instance_type          = "t2.micro"
+  instance_type          = "m7i-flex.large"
   subnet_id              = aws_subnet.public.id
   vpc_security_group_ids = [aws_security_group.k8s_sg.id]
   key_name               = aws_key_pair.k8s_key.key_name

@@ -1,0 +1,26 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.backup
+*.tfplan
+tfplan
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Secrets — never commit these
+*.pem
+*.key
+terraform.tfvars        # contains your IP + GitHub username
+!bootstrap/terraform.tfvars
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
